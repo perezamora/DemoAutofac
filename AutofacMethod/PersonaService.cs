@@ -8,11 +8,16 @@ namespace AutofacMethod
 {
     public class PersonaService
     {
-        Alimento alimento;
+        Alimento _alimento;
 
         public void SetComida(Alimento alimento)
         {
-            Console.WriteLine(string.Format("Hoy he comido {0}", alimento.Nombre));
+            _alimento = alimento;
+        }
+
+        public void MostrarComida()
+        {
+            Console.WriteLine(string.Format("Hoy he comido {0}", _alimento.Nombre));
         }
 
     }

@@ -15,7 +15,8 @@ namespace AutofacMethod
 
             using (var scope = container.BeginLifetimeScope())
             {
-                container.Resolve<PersonaService>();
+                var paco = container.Resolve<PersonaService>();
+                paco.MostrarComida();
             }
 
             Console.ReadKey();
