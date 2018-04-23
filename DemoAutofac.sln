@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutofacConstruct", "AutofacConstruct\AutofacConstruct.csproj", "{EFAC81A8-79C9-4CFE-B96F-8B9A27A97E3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFAC81A8-79C9-4CFE-B96F-8B9A27A97E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFAC81A8-79C9-4CFE-B96F-8B9A27A97E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFAC81A8-79C9-4CFE-B96F-8B9A27A97E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFAC81A8-79C9-4CFE-B96F-8B9A27A97E3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A395CC09-5241-4D6C-B75F-FF318DAD0C6E}
+	EndGlobalSection
+EndGlobal
