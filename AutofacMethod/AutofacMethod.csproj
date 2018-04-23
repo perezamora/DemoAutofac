@@ -45,9 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EscuelaService.cs" />
-    <Compile Include="IocConfigP.cs" />
-    <Compile Include="EscuelaRepository.cs" />
+    <Compile Include="Alimento.cs" />
+    <Compile Include="IocConfigM.cs" />
+    <Compile Include="PersonaService.cs" />
     <Compile Include="RestauranteService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

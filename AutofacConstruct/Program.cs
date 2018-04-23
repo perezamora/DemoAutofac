@@ -12,17 +12,20 @@ namespace AutofacConstruct
         static void Main(string[] args)
         {
             var container = IocConfig.Configure();
-            var messageservice = container.Resolve<MessageService>();
 
-            Message msg = new Message
+            using (var scope = container.BeginLifetimeScope())
             {
-                Title = "Demo autofac",
-                Comment = "Inyection dependency with constructor"
-            };
+                var messageservice = container.Resolve<MessageService>();
 
-            messageservice.Print(msg);
+                Message msg = new Message
+                {
+                    Title = "Demo autofac",
+                    Comment = "Inyection dependency with constructor"
+                };
+
+                messageservice.Print(msg);
+            }
             Console.ReadKey();
-
         }
     }
 }

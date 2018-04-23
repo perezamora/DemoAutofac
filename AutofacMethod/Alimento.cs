@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace AutofacMethod
 {
-    public class EscuelaRepository
+    public class Alimento
     {
-        public void PrintNombre()
+        public string Nombre { get; set; }
+        public Alimento(string nombre)
         {
-            Console.WriteLine("Nuestra señora de los dolores");
+            Nombre = nombre;
         }
     }
 }

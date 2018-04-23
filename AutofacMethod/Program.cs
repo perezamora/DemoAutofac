@@ -11,13 +11,13 @@ namespace AutofacMethod
     {
         static void Main(string[] args)
         {
-            var container = IocConfigP.Configure();
-            var restaurante = container.Resolve<RestauranteService>();
-            var escuela = container.Resolve<EscuelaService>();
+            var container = IocConfigM.Configure();
 
-            restaurante.PrintNombre();
-            escuela.PrintEscuela();
-            escuela.PrintNombre();
+            using (var scope = container.BeginLifetimeScope())
+            {
+                container.Resolve<PersonaService>();
+            }
+
             Console.ReadKey();
         }
     }
